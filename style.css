@@ -1,28 +1,112 @@
-/* Typing Animation */
-.typing-text {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid #2563eb;
-    width: 0;
-    animation: typing 4s steps(30, end) forwards;
+  /* About us section */
+  .about-us {
+    background-color: #eff6ff;
+    width: 100%;
   }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+
+  .about-us h1 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-align: center;
   }
-  
-  /* Fade-In Sections */
-  .fade-in {
+
+  div.story {
+    margin-top: 0.8rem;
+  } 
+
+  .about-us h2 {
+    font-size: 1.5rem;
+    font-weight: 450;
+    margin-inline: 1.5rem;
+    margin-top: 0.9rem;
+  }
+
+  .about-us h1 span {
+    color: #2563EB;
+  }
+
+  .about-us p {
+    font-size: 1.1rem;
+    margin-inline: 1.5rem;
+    line-height: 1.3rem;
+  }
+
+  .our-team h3 {
+    font-size: 1.6rem; 
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    padding-top: 0.6rem;
+  }
+
+  .our-team span {
+    color: #2563EB;
+  }
+
+.our-doctors {
+  display: flex;
+  padding: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 1rem; 
+}
+
+.our-doctors::-webkit-scrollbar {
+  display: none;
+}
+
+  .our-doctors img {
+    flex: 0 0 auto;  /* prevents shrinking or wrapping */
+    border-radius: 0.6rem;
+    width: 25%;
+    margin-block: 0.2rem;
+  }
+
+  .our-doctors img:hover {
+    border: 1px solid #eff6ff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .our-doctors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .our-doctors img {
+      width: 80%;
+      height: auto; 
+      border-radius: 0.6rem;
+    }
+  }
+
+  .about-us, h3 {
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
+    transform: translateY(30px);
+    animation: fadeSlideUp 5s ease forwards;
+     animation-delay: 0s; 
   }
-  .delay-1 { animation-delay: 0.4s; }
-  
-  @keyframes fadeIn {
+   
+   @keyframes fadeSlideUp {
     to {
       opacity: 1;
       transform: translateY(0);
     }
-  }
+  } 
+
+  .our-doctors {
+      animation: slideLeft 1s ease forwards;
+      animation-delay: 1s;
+    }
+    
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
