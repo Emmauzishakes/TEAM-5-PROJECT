@@ -1,3 +1,10 @@
+const menuBtn = document.getElementById('mobile-menu-button');
+const menu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+
 // JavaScript for Form Submission 
 
         // Initialize EmailJS with your public key
