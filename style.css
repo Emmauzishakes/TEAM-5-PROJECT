@@ -1,4 +1,7 @@
   /* About us section */
+  #about-us {
+    margin-top: -20px;
+  }
   .about-us {
     background-color: #eff6ff;
     width: 100%;
@@ -65,6 +68,46 @@
   .our-doctors img:hover {
     border: 1px solid #eff6ff;
   }
+  
+
+  .about-section {
+    background-color: #eff6ff;
+    padding: 60px 20px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .about-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+    color: #007b8f;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .about-block {
+    margin-bottom: 30px;
+  }
+  
+  .about-block h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007b8f;
+    padding-left: 10px;
+  }
+  
+  .about-block p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+  }
+  
 
   @media screen and (max-width: 768px) {
     .our-doctors {
@@ -92,6 +135,41 @@
       align-items: center;
 
     }
+
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-section {
+      padding: 40px 10px;
+    }
+  
+    .about-section h2 {
+      font-size: 28px;
+    }
+  
+    .about-block h3 {
+      font-size: 20px;
+    }
+  
+    .about-block p {
+      font-size: 15px;
+    }
+  }
+  
+  /* 📱 Responsive for mobile */
+  @media screen and (max-width: 480px) {
+    .about-section h2 {
+      font-size: 24px;
+    }
+  
+    .about-block h3 {
+      font-size: 18px;
+    }
+  
+    .about-block p {
+      font-size: 14px;
+    }
   }
 
   .about-us, h3 {
@@ -107,7 +185,7 @@
       transform: translateY(0);
     }
   } 
-
+/*
   .our-doctors {
       animation: slideLeft 1s ease forwards;
       animation-delay: 1s;
@@ -123,6 +201,7 @@
         opacity: 1;
       }
     }
+      */
 
     
 .footer-container{
