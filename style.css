@@ -216,7 +216,7 @@
       text-align: center;
       padding: 50px;
       margin-bottom: 0px;
-      background-color: rgb(4, 4, 65);
+      background-color: rgb(107, 144, 183);
       color: white;
       border-bottom: 1px;
       border-style: dotted;
@@ -243,7 +243,7 @@
     }*/
 
     .partA button{
-      background-color: blue;
+      background-color: rgb(26, 23, 23);
       color: white;
       text-transform: uppercase;
       font-weight: bold;
@@ -264,7 +264,7 @@
       display: flex;
       padding: 40px 20px;
       justify-content: space-around;
-      background-color: rgb(4, 4, 65);
+      background-color: black;
       color: white;
       align-items: center;
       width: 100%;
@@ -282,7 +282,7 @@
 
     .partB h2{
       font-size: 16px;
-      color: rgb(9, 238, 21);
+      color: rgb(107, 144, 183);
       text-decoration: underline;
       text-decoration-color: white;
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -301,14 +301,14 @@
     }
     .signup-button{
       padding: 8px 15px;
-      background-color: rgb(241, 186, 3);
+      background-color: rgb(107, 144, 183);
       margin-left: -5px;
       border-radius: 2px;
       text-transform: uppercase;
     }
 
     .signup-button:hover{
-     background-color: rgb(175, 74, 7);
+     background-color: black;
     }
 
 
@@ -316,7 +316,7 @@
       border-top: 1px;
       border-style: solid;
       border-color: rgb(224, 214, 119);
-      background-color: rgb(7, 7, 119);
+      background-color: black;
       display: flex;
       justify-content: space-around;
       color: rgb(245, 244, 243);
