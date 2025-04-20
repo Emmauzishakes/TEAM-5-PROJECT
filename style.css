@@ -1,4 +1,6 @@
-  /* About us section */
+html {
+  overflow-x: hidden;
+}  /* About us section */
   #about-us {
     margin-top: -20px;
   }
